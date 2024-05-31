@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construcciones Marte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6b4423;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .intro, .bio, .locations, .gallery, .videos {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .intro h1, .bio h1, .locations h1, .gallery h1, .videos h1 {
+            color: #6b4423;
+        }
+        .gallery, .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery-item, .video-item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            max-width: 300px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .gallery-item img, .video-item video {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .gallery-item h3, .video-item h3 {
+            margin: 10px 0 5px;
+            color: #6b4423;
+        }
+        .gallery-item p, .video-item p {
+            margin: 0;
+        }
+        footer {
+            background-color: #6b4423;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Construcciones Marte</h1>
+            <p>Transformamos tus ideas en realidad</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h1>Bienvenidos a Construcciones Marte</h1>
+            <p>Somos una empresa dedicada a la construcción y remodelación de todo tipo de estructuras. Nuestro objetivo es proporcionar servicios de alta calidad y satisfacción al cliente. Explora nuestra página para conocer más sobre nuestros trabajos y cómo podemos ayudarte a realizar tus proyectos.</p>
+        </section>
+
+        <section class="bio">
+            <h1>Sobre nosotros</h1>
+            <p>Hola, somos Construcciones Marte, un equipo de profesionales en la construcción y remodelación de casas y edificios. Nos especializamos en trabajos de albañilería de alta calidad, y nos apasiona transformar espacios con técnicas precisas y acabados duraderos. Aquí puedes ver algunos de nuestros proyectos más recientes.</p>
+        </section>
+
+        <section class="locations">
+            <h1>Dónde se encuentran nuestros trabajos</h1>
+            <p>Hemos completado proyectos en varias ubicaciones, incluyendo:</p>
+            <ul>
+                <li>Ciudad de México</li>
+                <li>Guadalajara</li>
+                <li>Monterrey</li>
+                <li>Puebla</li>
+                <li>Toluca</li>
+                <li>Querétaro</li>
+            </ul>
+        </section>
+
+        <section class="gallery">
+            <h1>Galería de trabajos</h1>
+            <div class="gallery-item">
+                <img src="trabajo1.jpg" alt="Construcción de Casa Moderna">
+                <h3>Construcción de Casa Moderna</h3>
+                <p>Fecha: Enero 2023 - Marzo 2023</p>
+                <p>Duración: 3 meses</p>
+            </div>
+            <div class="gallery-item">
+                <img src="trabajo2.jpg" alt="Remodelación de Cocina">
+                <h3>Remodelación de Cocina</h3>
+                <p>Fecha: Abril 2023 - Mayo 2023</p>
+                <p>Duración: 2 meses</p>
+            </div>
+            <div class="gallery-item">
+                <img src="trabajo3.jpg" alt="Construcción de Terraza">
+                <h3>Construcción de Terraza</h3>
+                <p>Fecha: Junio 2023 - Agosto 2023</p>
+                <p>Duración: 3 meses</p>
+            </div>
+            <div class="gallery-item">
+                <img src="trabajo4.jpg" alt="Renovación de Baño">
+                <h3>Renovación de Baño</h3>
+                <p>Fecha: Septiembre 2023 - Octubre 2023</p>
+                <p>Duración: 2 meses</p>
+            </div>
+            <div class="gallery-item">
+                <img src="trabajo5.jpg" alt="Construcción de Garaje">
+                <h3>Construcción de Garaje</h3>
+                <p>Fecha: Noviembre 2023 - Enero 2024</p>
+                <p>Duración: 3 meses</p>
+            </div>
+            <div class="gallery-item">
+                <img src="trabajo6.jpg" alt="Reparación de Techo">
+                <h3>Reparación de Techo</h3>
+                <p>Fecha: Febrero 2024 - Marzo 2024</p>
+                <p>Duración: 2 meses</p>
+            </div>
+        </section>
+
+        <section class="videos">
+            <h1>Videos de trabajos</h1>
+            <div class="video-item">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <h3>Video del Proyecto 1</h3>
+                <p>Fecha: Enero 2023 - Marzo 2023</p>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <h3>Video del Proyecto 2</h3>
+                <p>Fecha: Abril 2023 - Mayo 2023</p>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <h3>Video del Proyecto 3</h3>
+                <p>Fecha: Junio 2023 - Agosto 2023</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Contacto: marcos.jimenez@example.com | Teléfono: 123-456-7890</p>
+    </footer>
+</body>
+</html>
